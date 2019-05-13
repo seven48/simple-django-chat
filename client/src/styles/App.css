@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+
+body {
+  background: url('https://media1.tenor.com/images/2ee36b41425605c8a884917477456e6e/tenor.gif?itemid=12492957');
+  background-size: 60%; 
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: #F5A9F2;
+  animation-duration: 10s;
+  animation-name: fon;
+}
+
+@keyframes fon {
+  from {
+    background-size: 1%; 
+    background-color: #FFFFFF;
+  }
+
+  to {
+    background-size: 60%;
+    background-color: #F5A9F2;
+  }
+}
+
+@keyframes text-welcom {
+  from {
+    margin-top: -200%; 
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes anton {
+  from {
+    top: 300px; 
+    right: 300px;
+  }
+
+  to {
+    top: 0px;
+    right: 30px;
+  }
+
+  85% {
+    top: 300px; 
+    right: 300px;
+  }
+}
+
+h1 {
+  color: #f7ff8a;
+  text-align: center;
+  margin-top: 0px; 
+  font-size: 200px;
+  animation-duration: 2s;
+  animation-name: text-welcom;
+}
+
+.anton-or {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+}
+
+.anton-or .anton {
+  position: absolute;
+  background: url('https://user-images.githubusercontent.com/17051275/57647575-fb832e80-75cb-11e9-9e51-b4bb0bc0a43f.png');
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 30px;
+  animation-duration: 4s;
+  animation-name: anton;
+}
+
+.or {
+  position: absolute;
+  animation-duration: 4s;
+  animation-name: anton;
+  top: 0px;
+  right: 30px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+}
